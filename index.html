@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-<link href="/dewi/style.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 
@@ -24,30 +24,30 @@
 <body>
 
   <!-- Ganti Audio di sini -->
-  <audio src="/dewi/dewul.mp3" id="linkmp3" class="sembunyi"></audio>
+  <audio src="/dewul.mp3" id="linkmp3" class="sembunyi"></audio>
 
   <div id="bodyblur">
-    <!-- Wallpaper --><img src="/dewi/gbr/dew.jpg" id="wallpaper" />
+    <!-- Wallpaper --><img src="/gbr/dew.jpg" id="wallpaper" />
     <div id="beneranblur"></div>
   </div>
 
   <div id='Content'>
 
     <div id="kadoIn">
-      <!-- Tombol Surat --><img src="/dewi/gbr/kado.png" />
+      <!-- Tombol Surat --><img src="/gbr/kado.png" />
     </div>
     <p id="ket">Gift par Click Karo!</p>
 
     <div class="kumpulanstiker">
       <!-- Stiker untuk Konten -->
-      <img src="/dewi/gbr/bunga.gif" id="fotostiker" />
-      <img src="/dewi/gbr/pusn.gif" id="fotostiker1" />
-      <img src="/dewi/gbr/pandacoklat.gif" id="fotostiker2" />
-      <img src="/dewi/gbr/cilukba.gif" id="fotostiker3" />
-      <img src="/dewi/gbr/pandakuning.gif" id="fotostiker4" />
-      <img src="/dewi/gbr/emawh.gif" id="fotostiker5" />
+      <img src="/gbr/bunga.gif" id="fotostiker" />
+      <img src="/gbr/pusn.gif" id="fotostiker1" />
+      <img src="/gbr/pandacoklat.gif" id="fotostiker2" />
+      <img src="/gbr/cilukba.gif" id="fotostiker3" />
+      <img src="/gbr/pandakuning.gif" id="fotostiker4" />
+      <img src="/gbr/emawh.gif" id="fotostiker5" />
 
-      <img src="/dewi/gbr/pandacoklat.gif" id="fotostiker6" />
+      <img src="/gbr/pandacoklat.gif" id="fotostiker6" />
     </div>
 
     <p id="halo" class="halo"></p>
@@ -89,7 +89,7 @@
 
     <!-- Pesan Ditolak -->
     <div id="pesanditolak">
-      <img id="stikerditolak" src="/dewi/gbr/weee.gif" />
+      <img id="stikerditolak" src="/gbr/weee.gif" />
       <p id="kataditolak">Okay, Thik hai aap nahi chahate to. 😜❤️</p>
     </div>
 
@@ -146,7 +146,7 @@
       var {
         value: nama
       } = await swals.fire({
-        title: 'Masukin Nama Kamu',
+        title: 'Apna Naam likho',
         input: 'text',
       });
       if (nama && nama.length < 11) {
@@ -154,7 +154,7 @@
         vketikhalo = "Hai, " + nama + " ✨";
         mulainama();
       } else {
-        await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+        await swals.fire('Ups!', 'Naam khali ya 10 letters se jada nahi ho sakata h!');
         inipesan();
       }
     }
@@ -166,12 +166,12 @@
     var tomnegatif = 'Noii';
 
     async function menuju() {
-      pesanwhatsapp = "Makasii udah ngucapin " + nama + " ultah ><";
-      await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');
+      pesanwhatsapp = "Aisa kehne ke liye shukriya " + nama + " Happy Birthday ><";
+      await swals.fire('OK!', 'Answer mere whatsapp par send kar do!', 'success');
       window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;
     }
   </script>
-  <script src="/dewi/script.js"></script>
+  <script src="/script.js"></script>
   <!-- Sampai Sini -->
 </body>
 
